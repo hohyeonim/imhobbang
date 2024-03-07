@@ -1,11 +1,14 @@
 "use client"
 import Image from "next/image";
 import Header from "../app/Component/Header/Header";
+import Sidebar from "./Component/Sidebar/Sidebar";
 
 export default function Home() {
   return (
-    <Header>
+    <>
+      <Sidebar isOpen={false} setIsOpen={undefined}>
       
-    </Header>
+      </Sidebar>
+    </>
   );
 }
