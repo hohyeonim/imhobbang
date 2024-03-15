@@ -1,17 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+
 
 const SidebarWrapper = styled.div`
-  width: 250px;
+  width: 500px;
   height: 100%;
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  background-color: #008000;
+  color: #ffffff;
+  padding: 0px;
 `;
 
 const Sidebar = () => {
   return (
     <SidebarWrapper>
-      {/* 여기에 사이드바 내용을 추가하세요 */}
       <h2>임호현</h2>
       <ul>
         <li>Home</li>

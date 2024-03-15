@@ -4,9 +4,17 @@ import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import Sidebar from './_component/Sidebar';
 
+const PageHtml = styled.html`
+  
+`
+
+const Pageody = styled.body`
+  /* margin: 0px; */
+`
+
 const PageWrapper = styled.div`
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
 `;
 
 const ContentWrapper = styled.div`
@@ -20,13 +28,17 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <PageWrapper>
-      <Sidebar />
-      <ContentWrapper>
-        {/* 여기에 페이지 내용을 추가하세요 */}
-        {children}
-      </ContentWrapper>
-    </PageWrapper>
+    <PageHtml>
+      <Pageody>
+        <PageWrapper>
+          <Sidebar />
+          <ContentWrapper>
+            {/* 여기에 페이지 내용을 추가하세요 */}
+            {children}
+          </ContentWrapper>
+        </PageWrapper>
+      </Pageody>
+    </PageHtml>
   );
 };
 
