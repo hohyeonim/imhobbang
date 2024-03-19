@@ -9,7 +9,7 @@ const PageHtml = styled.html`
 `
 
 const Pageody = styled.body`
-  /* margin: 0px; */
+  margin: 0px;
 `
 
 const PageWrapper = styled.div`

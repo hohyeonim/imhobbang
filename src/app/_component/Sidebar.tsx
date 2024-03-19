@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 
@@ -9,20 +10,71 @@ const SidebarWrapper = styled.div`
   padding: 0px;
 `;
 
+const Button = styled.button`
+  width: 200px;
+  height: 52px;
+  margin-top: 10px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: 0px;
+  text-align: center;
+  background-color: #ffffff;
+
+  &:active {
+    opacity: 0.3;
+  }
+`;
+
 const Sidebar = () => {
   return (
     <SidebarWrapper>
       <h2>임호현</h2>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Career</li>
-        <li>Educations</li>
-        <li>Experience</li>
-        <li>Project</li>
-        <li>Skill</li>
-        <li>Blog</li>
-        <li>Contact</li>
+        <Link href={'/'}> 
+          <Button>
+            Home
+          </Button>
+        </Link>
+        <Link href={'/About'}> 
+          <Button>
+            About
+          </Button>
+        </Link>
+        <Link href={'/Career'}> 
+          <Button>
+            Career
+          </Button>  
+        </Link>
+        <Link href={'/Education'}> 
+          <Button>
+            Educations
+          </Button>
+        </Link> 
+        <Link href={'/Experience'}> 
+          <Button>
+            Experience
+          </Button>
+        </Link>
+        <Link href={'/Project'}> 
+          <Button>
+          Project
+          </Button>
+        </Link>
+        <Link href={'/Skill'}> 
+          <Button>
+            Skill
+          </Button>
+        </Link>
+        <Link href={'/Blog'}>
+          <Button>
+            Blog
+          </Button>
+        </Link>
+        <Link href={'/Contact'}>
+          <Button>
+           Contact
+          </Button>
+        </Link>
       </ul>
     </SidebarWrapper>
   );
